@@ -5,12 +5,6 @@ board = Array.new 9, " "
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
-
-loop do
-  print "Please enter 1-9: "
-  spot = input_to_index gets.chomp
-  break if valid_move?(spot)
-end
 # http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/6745
 
 turn(board)
