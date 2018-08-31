@@ -11,7 +11,7 @@ loop do
   spot = input_to_index gets.chomp
   break if valid_move?(spot)
 end
+# http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/6745
 
 turn(board)
 
-# http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/6745
