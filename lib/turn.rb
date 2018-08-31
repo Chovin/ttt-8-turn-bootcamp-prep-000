@@ -1,7 +1,6 @@
-def display_board(board) 
-  i = -1
+def display_board(board)
   cells = (0...9).map({|i| " #{board[i]} "})
-  puts (0...9).map {|i|}.join ''
+  puts cells.each_slice(3).map {|x| x.join('|')}.join("\n-----------\n")
 end
 
 def valid_move?(board, index)
@@ -18,4 +17,8 @@ end
 
 def move(board, index, token)
   board[index] = token
+end
+
+def input_to_index(input)
+ input.strip.to_i - 1
 end
