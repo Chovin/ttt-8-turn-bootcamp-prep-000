@@ -22,3 +22,11 @@ end
 def input_to_index(input)
  input.strip.to_i - 1
 end
+
+def turn(board)
+  loop do
+    print "Please enter 1-9: "
+    spot = input_to_index gets.chomp
+    break if valid_move?(spot)
+  end
+end
