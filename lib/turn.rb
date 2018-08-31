@@ -29,4 +29,6 @@ def turn(board)
     spot = input_to_index gets.chomp
     break if valid_move?(spot)
   end
+  move(board, spot)
+  display_board(board)
 end
