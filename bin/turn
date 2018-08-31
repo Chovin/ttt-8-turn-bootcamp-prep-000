@@ -8,8 +8,8 @@ display_board(board)
 
 loop do
   print "Please enter 1-9: "
-  choice = input_to_index(gets.chomp)
-  break if valid_move?(choice)
+  spot = input_to_index gets.chomp
+  break if valid_move?(spot)
 end
 turn(board)
 
